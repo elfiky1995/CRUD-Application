@@ -1,5 +1,11 @@
 # CRUD-Application
+<br>
 JavaScript CRUD Application
+<br>
+<br>
+Live Demo: https://elfiky1995.github.io/CRUD-Application/
+<br>
+<br>
 CRUD is an acronym that comes from the world of computer programming and refers to the four functions that are considered necessary to implement a persistent storage application: create, read, update and delete.
 Four CRUD operations components explained
 A relational database consists of tables with rows and columns. In a relational database, each row of a table is known as a tuple or a record. Each column of the table represents a specific attribute or field. The four CRUD functions can be called by users to perform different types of operations on selected data within the database. This could be accomplished using code or through a graphical user interface. Let's review each of the four components in-depth to fully appreciate their collective importance in facilitating database interactions.
