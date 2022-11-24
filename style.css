@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #434242;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f5ed;
+}
+
+.container {
+    padding: 20px 0;
+    width: 60%;
+    text-align: center;
+    position: relative;
+}
+
+.container h1 {
+    font-weight: 300;
+    font-size: 45px;
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container form label {
+    color: var(--main-color);
+    margin-top: 20px;
+}
+
+.container form input:not(:last-child) {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.container form input:last-child {
+    color: white;
+    background-color: #22A39F;
+    padding: 10px 30px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container form input:last-child:hover {
+    background-color: #187c78;
+}
+
+table {
+    margin-top: 50px;
+    width: 120%;
+    left: -10%;
+    position: absolute;
+}
+
+table thead {
+    background-color: #434242;
+    color: white;
+}
+
+table thead tr th {
+    padding: 10px 10px;
+    text-align: start;
+}
+
+table thead tr th:first-child {
+    border-top-left-radius: 8px;
+}
+
+table thead tr th:last-child {
+    border-top-right-radius: 8px;
+}
+
+table tbody {
+    background-color: white;
+}
+
+table tbody tr td {
+    padding: 10px 10px;
+    text-align: start;
+    color: var(--main-color);
+}
+
+table tbody tr td a {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+table tbody tr td a.edit {
+    background-color: orange;
+}
+
+table tbody tr td a.delete {
+    background-color: rgb(244, 83, 83);
+    color: white;
+}
+
+table tbody tr:last-of-type td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+table tbody tr:last-of-type td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.alert-danger,
+.alert-success,
+.alert-info {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: start;
+}
+
+.alert-danger {
+    background-color: #FBDAD9;
+    color: #A46F75;
+}
+
+.alert-success {
+    background-color: #D0E4DF;
+    color: #4A6D63;
+}
+
+.alert-info {
+    background-color: #CEF0FE;
+    color: #4F788C;
+}
