@@ -8,6 +8,8 @@
 
 :root {
     --main-color: #434242;
+    --border-radius: 8px;
+    --secondary-color: #22A39F;
 }
 
 a {
@@ -15,16 +17,39 @@ a {
     color: var(--main-color);
 }
 
+/*Signature*/
+span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #8f8f8f;
+    font-weight: 100;
+}
+
+span a {
+    font-weight: 400;
+    color: #777777;
+    transition: 0.3s;
+}
+
+span a:hover {
+    color: var(--secondary-color);
+}
+
+/*Signature*/
+
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f7f5ed;
+    position: relative;
 }
 
 .container {
-    padding: 20px 0;
+    padding: 50px 0;
     width: 60%;
     text-align: center;
     position: relative;
@@ -53,7 +78,7 @@ body {
 .container form input:not(:last-child) {
     width: 100%;
     padding: 10px 10px;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     outline: none;
     border: none;
 }
@@ -62,7 +87,7 @@ body {
     color: white;
     background-color: #22A39F;
     padding: 10px 30px;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     outline: none;
     border: none;
     margin-top: 20px;
@@ -92,11 +117,11 @@ table thead tr th {
 }
 
 table thead tr th:first-child {
-    border-top-left-radius: 8px;
+    border-top-left-radius: var(--border-radius);
 }
 
 table thead tr th:last-child {
-    border-top-right-radius: 8px;
+    border-top-right-radius: var(--border-radius);
 }
 
 table tbody {
@@ -110,26 +135,35 @@ table tbody tr td {
 }
 
 table tbody tr td a {
-    display: inline-block;
     padding: 5px 15px;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 }
 
 table tbody tr td a.edit {
     background-color: orange;
+    transition: 0.3s;
+}
+
+table tbody tr td a.edit:hover {
+    background-color: rgb(224, 149, 10);
 }
 
 table tbody tr td a.delete {
     background-color: rgb(244, 83, 83);
     color: white;
+    transition: 0.3s;
+}
+
+table tbody tr td a.delete:hover {
+    background-color: rgb(194, 67, 67);
 }
 
 table tbody tr:last-of-type td:first-child {
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius: var(--border-radius);
 }
 
 table tbody tr:last-of-type td:last-child {
-    border-bottom-right-radius: 8px;
+    border-bottom-right-radius: var(--border-radius);
 }
 
 .alert-danger,
@@ -137,7 +171,7 @@ table tbody tr:last-of-type td:last-child {
 .alert-info {
     width: 100%;
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     text-align: start;
 }
 
@@ -154,4 +188,8 @@ table tbody tr:last-of-type td:last-child {
 .alert-info {
     background-color: #CEF0FE;
     color: #4F788C;
+}
+
+p {
+    display: block;
 }
