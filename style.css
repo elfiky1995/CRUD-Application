@@ -139,9 +139,22 @@ table tbody tr td a {
     border-radius: var(--border-radius);
 }
 
+@media (max-width: 576px) {
+    table tbody tr:last-of-type td:last-child {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
 table tbody tr td a.edit {
     background-color: orange;
     transition: 0.3s;
+    text-align: center;
 }
 
 table tbody tr td a.edit:hover {
